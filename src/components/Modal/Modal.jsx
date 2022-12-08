@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { useEffect } from 'react';
 import { Backdrop, ModalW } from './Modal.styled';
 
@@ -32,3 +34,8 @@ const Modal = ({ image, closeModal }) => {
 };
 
 export default Modal;
+
+Modal.propTypes = {
+  image: PropTypes.string,
+  closeModal: PropTypes.func,
+};
